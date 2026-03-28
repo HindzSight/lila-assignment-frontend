@@ -1,0 +1,90 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #e7f7f8;
+  background: #091b2a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.card {
+  width: min(500px, 95vw);
+  background: #10283c;
+  border: 1px solid #1e4566;
+  border-radius: 14px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.form,
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input,
+button {
+  border-radius: 8px;
+  border: 1px solid #2c6f99;
+  padding: 0.65rem 0.8rem;
+  background: #0d2132;
+  color: #e7f7f8;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.active {
+  background: #26a69a;
+  color: #062026;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.cell {
+  width: 100%;
+  aspect-ratio: 1;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.meta,
+.badge {
+  margin: 0;
+}
+
+.winner {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #1f425f;
+  padding: 0.4rem;
+  text-align: left;
+}
+
+.self-row {
+  background: #143149;
+}
